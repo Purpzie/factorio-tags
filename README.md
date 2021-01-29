@@ -5,24 +5,17 @@ Change your tag with /tag. Configurable permissions for multiplayer.
 Admins can also use /tagset, /cleartags, and /taglist.
 
 ## Commands
-- `/tag [text]`  
-    Set your tag. Leaving it blank will reset it.
-- `/tagset <player> [tag]`  
-    Admin only. Set another player's tag (removes it if blank). This bypasses the character limit setting.
-- `/cleartags`  
-    Admin only. Clear all tags.
-- `/taglist`  
-    Admin only. List all players with tags.
+- `/tag [text]` - Set your tag. Leaving it blank will reset it.
+- `/tagset <player> [tag]` - Admin only. Set another player's tag (removes it if blank). This bypasses the character limit setting.
+- `/cleartags` - Admin only. Clear all tags.
+- `/taglist` - Admin only. List all players with tags.
 
 ## Settings
-- **Prefix / suffix**  
-    Nothing by default. These get placed before and after tags.
+- **Prefix & suffix** - Nothing by default. These get placed before and after tags.
 For example, if your tag is `birb` and the prefix & suffix are `(` & `)`, your tag will show in chat as `(birb)`.
 This can also be used to make tags have a different color than player names.
-- **Restrict to admins**  
-    If checked, only admins will be able to change tags.
-- **Max tag length**  
-    Only applies in multiplayer. Admins can bypass this limit with `/tagset`.
+- **Restrict to admins** - If checked, only admins will be able to change tags.
+- **Max tag length** - Only applies in multiplayer. Admins can bypass this limit with `/tagset`.
 
 ## Remote interface
 This mod provides an interface named `tags`.
@@ -32,11 +25,11 @@ This mod provides an interface named `tags`.
     - player : [`LuaPlayer`][LuaPlayer] - The player whose tag was changed
     - tag : `string` or `nil` - The player's new tag
     - previous : `string` or `nil` - The player's old tag
-- `get_tag(player)` => `string` or `nil`  
+- `get_tag(player)` => `string` or `nil`
     > player : [`LuaPlayer`][LuaPlayer]
 
     Get a player's tag (not including prefix or suffix).
-- `set_tag(player, tag)`  
+- `set_tag(player, tag)`
   > player : [`LuaPlayer`][LuaPlayer]  
   tag : `string` or `nil`
 
