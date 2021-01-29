@@ -1,0 +1,6 @@
+{
+  "factorio.package.preparingCommitMessage": "$VERSION",
+  "factorio.package.movedToCommitMessage": "move to next version: $VERSION",
+  "factorio.package.zipLocation": "outside",
+  "factorio.package.removeZipAfterPublish": true
+}

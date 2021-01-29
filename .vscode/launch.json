@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "factoriomod",
+      "request": "launch",
+      "hookControl": ["playertags"],
+      "factorioArgs": ["--load-scenario", "EditorExtensions/testing"],
+      "disableExtraMods": true,
+      "factorioPath": "${env:FACTORIO_EXE_PATH}",
+      "adjustMods": {
+        "playertags": true,
+        "EditorExtensions": true,
+        "flib": true
+      }
+    },
+    {
+      "name": "Debug settings & data",
+      "type": "factoriomod",
+      "request": "launch",
+      "hookControl": ["playertags"],
+      "hookSettings": true,
+      "hookData": true,
+      "factorioArgs": ["--load-scenario", "EditorExtensions/testing"],
+      "disableExtraMods": true,
+      "factorioPath": "${env:FACTORIO_EXE_PATH}",
+      "adjustMods": {
+        "playertags": true,
+        "EditorExtensions": true,
+        "flib": true
+      }
+    },
+    {
+      "name": "Profile",
+      "type": "factoriomod",
+      "request": "launch",
+      "hookControl": ["playertags"],
+      "hookMode": "profile",
+      "disableExtraMods": true,
+      "factorioPath": "${env:FACTORIO_EXE_PATH}",
+      "adjustMods": {
+        "playertags": true,
+        "EditorExtensions": true,
+        "flib": true
+      }
+    }
+  ]
+}

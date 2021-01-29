@@ -1,0 +1,14 @@
+{
+  "name": "playertags",
+  "title": "Tags",
+  "version": "1.0.0",
+  "author": "Purpzie",
+  "contact": "Purpzie#0001 on Discord",
+  "factorio_version": "1.1",
+  "homepage": "https://github.com/Purpzie/factorio-tags",
+  "dependencies": ["base >= 1.1.0"],
+  "package": {
+    "git_publish_branch": "main",
+    "ignore": ["debug.lua"]
+  }
+}
