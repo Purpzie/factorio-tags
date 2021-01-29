@@ -33,12 +33,12 @@ This mod provides an interface named `tags`.
     - tag : `string` or `nil` - The player's new tag
     - previous : `string` or `nil` - The player's old tag
 - `get_tag(player)` => `string` or `nil`  
-    player : [`LuaPlayer`][LuaPlayer]
+    > player : [`LuaPlayer`][LuaPlayer]
 
     Get a player's tag (not including prefix or suffix).
 - `set_tag(player, tag)`  
-  `player` : [`LuaPlayer`][LuaPlayer]  
-  `tag` : `string` or `nil`
+  > player : [`LuaPlayer`][LuaPlayer]  
+  tag : `string` or `nil`
 
   Set a player's tag. Prefix/suffix will be added to it in chat.
 
